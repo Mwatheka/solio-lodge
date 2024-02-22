@@ -1,0 +1,301 @@
+<div class="carousel-item">
+        <div class="col-md-12" style="background-image: url('image2.jpg');">
+          <h2>Galdessa Camp History</h2>
+          <p style="text-align:justify;">
+            <!-- Your content here -->
+          </p>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Galdessa Camp History </h2>
+          <p style="text-align:justify;">
+            
+ 
+          </p>
+        </div><h2>Voi Wildlife Lodge Safari Spa Bar </h2>
+        <p style="text-align:justify;"> 
+          Our Honeymoon suites is an oasis for solace seekers. Edging the sparkling resort pool, these thoughtfully designed rooms feature luxurious amenities and a private terrace with a daybed. Relax poolside in your own private refuge.            
+
+        </p>
+        <h2>Voi Wildlife Lodge Mandhari Bar </h2>
+        <p style="text-align:justify;">
+          Adjacent to the Tembo Restaurant, the Mandhari Bar provides an alternative setting in which to view game and enjoy a ‘sun downer’ before dinner.
+          
+
+        </p>
+        
+      </section>
+
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Tsavo East National Park   </h2>
+          <p style="text-align:justify;">
+            Tsavo East National Park  
+ 
+          </p>
+        </div>
+        
+        
+      </section>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="PHOTO-2020-11-01-18-17-10.jpg" class="d-block w-100" alt="Gallery Image 4">
+            <p>Elephants</p>
+          </div>
+          <div class="col-md-4">
+            <img src="pool.jpg" class="d-block w-100" alt="Gallery Image 5">
+            <p>Swimming Pool</p>
+          </div>
+          <div class="col-md-4">
+            <img src="Galdessa-elephants-shot.jpg" class="d-block w-100" alt="Gallery Image 6">
+            <p>Ancient Elephant</p>
+          </div>
+        </div>
+      </div>
+      <script>
+        // var slideIndex = 0;
+         //var slides;
+       
+         function showSlides() {
+           if (!slides) {
+             slides = document.getElementsByClassName("carousel-item");
+           }
+           for (var i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+           }
+           slideIndex++;
+           if (slideIndex > slides.length) {
+             slideIndex = 1; // Reset slide index to start from the first slide
+           }
+           slides[slideIndex - 1].style.display = "block";
+           setTimeout(showSlides, 5000); // Change slide every 5 seconds
+         }
+       
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+       
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+       
+         // Show the first slide when the page loads
+         window.onload = function () {
+           showSlides();
+         };//
+       </script>
+        -->
+        <h2>Team Building packages  </h2>
+          <p style="text-align:justify;">
+            <ul>
+              <li>Non-alcoholic welcome drink on arrival</li>
+              <li>AM & PM tea and coffee breaks with assorted snacks</li>
+              <li>Accommodation on Full Board basis</li>
+              <li>Soft drink per person during meals</li>
+              <li>Use of Grounds for Outdoor Activities</li>
+              <li>Pooling ropes</li>
+              <li>Ball games</li>
+              <li>Free use of swimming pool</li>
+              <li>Unlimited High-speed Internet connectivity (Wi-Fi)</li>
+              <li>Entertainment in the evening with open Bar</li>
+            </ul>
+          </p>
+
+
+
+          <section class="row">
+            <div class="col-md-12" style="position:relative; padding: 0;">
+              <h2> Activities</h2>
+              <img src="180823691.jpg" alt="Image" style="width:100%; height:100vh; object-fit: cover;">
+              <div id="textCarousel" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; color:white; background-color:rgba(0, 0, 0); padding:20px; box-shadow: 0px 2px 4px rgba(250, 250, 250, 0.5);">
+                <div class="carousel-item active">
+                  <h2></h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                  
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h2></h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                     
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h2> </h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                    
+                  </p>
+                </div>
+                <div class="carousel-item">
+                  <h2>Voi Wildlife Lodge Business Centre </h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                    Located adjacent to the conference hall, the business centre is equipped with a wide-range of facilities designed to satisfy one’s business requirements whilst staying at the lodge. The Game Observation Terrace and Sundowner Bar are well-placed to hold corporate and private outdoor receptions. 
+                  </p>
+                </div>
+              </div>
+              <!-- Icons below text -->
+              <div style="position:absolute; bottom:20px; left:50%; transform:translateX(-50%);">
+                <i class="bi bi-chevron-left" onclick="prevSlide()" style="font-size: 70px; cursor: pointer;"></i>
+                <i class="bi bi-chevron-right" onclick="nextSlide()" style="font-size: 70px; cursor: pointer;"></i>
+              </div>
+            </div>
+          </section>
+          <script>
+            var slideIndex = 1;
+            showSlide(slideIndex);
+          
+            function prevSlide() {
+              showSlide(slideIndex -= 1);
+            }
+          
+            function nextSlide() {
+              showSlide(slideIndex += 1);
+            }
+          
+            function showSlide(n) {
+              var i;
+              var slides = document.getElementsByClassName("carousel-item");
+              if (n > slides.length) {
+                slideIndex = 1;
+              }
+              if (n < 1) {
+                slideIndex = slides.length;
+              }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              slides[slideIndex - 1].style.display = "block";
+            }
+          </script>
+
+
+          <hr class="hr">
+      <section class="row">
+        <div class="col-md-12">
+          <h2>Voi Wildlife Lodge Game drives  </h2>
+          <p style="text-align:justify;">
+             
+ 
+          </p>
+        </div>
+        
+        
+      </section>
+      <hr>
+
+      <section>
+        <div class="col-md-12"> 
+          <h2></h2>
+          <p style="text-align:justify;">
+            
+
+ 
+          </p>
+        </div>        
+      </section>
+      <section class="row">
+        <div class="col-md-12">
+            <h2> Sai Rock Hotel Activities </h2>
+            <p style="text-align:justify;">
+                
+            </p>
+            
+        </div>
+          
+        </section>
+        <hr>
+        <section class="row" style="background-image: url('DSC_0051b-E-1024x667.jpg'); background-size: 100% 100%; background-repeat: no-repeat; color:white;">
+          <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+              <h2> </h2>
+              <p style="text-align:justify;">
+                  
+              </p>
+              <h2> </h2>
+              <p style="text-align:justify;">
+                
+              </p>
+              <h2></h2>
+              <p style="text-align:justify; font: weight 6px;">
+  
+              </p>
+          </div>
+          <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+              <h2> </h2>
+              <p style="text-align:justify;">
+                  
+              </p>
+              <h2> </h2>
+              <p style="text-align:justify;">
+                
+              </p>
+              <h2></h2>
+              <p style="text-align:justify; font: weight 6px;">
+                    
+              </p>
+          </div>
+        </section>
+        <hr>
+      <section class="row">
+        <div class="col-md-12">
+          <h2>How to Travel to Tsavo East Voi Wildlife Lodge</h2>
+          <p style="text-align:justify;">
+            
+ 
+          </p>
+        </div>
+        
+      </section>
+      <hr>
+      <section class="row">
+        <div class="col-md-12">
+          <h2></h2>
+          <p style="text-align:justify;">
+            
+ 
+          </p>
+        </div>
+        
+        
+      </section>
+
+      <h2></h2>
+          <p>
+            
+
+          </p>
+          <h2></h2>
+          <p style="text-align:justify;">
+                        
+ 
+          </p> 
+
+
+
+          <section class="row" style="background-image: url('DSC_0051b-E-1024x667.jpg'); background-size: 100% 100%; background-repeat: no-repeat; color:white;">
+
+            <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+              <h2> </h2>
+              <p style="text-align:justify;">
+                  
+              </p>
+              <h2> </h2>
+              <p style="text-align:justify;">
+                
+              </p>
+              <h2></h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                    
+                  </p>
+            </div>
+          
+            <div class="col-md-6" style="background-color:rgba(0, 0, 0, 0.5);">
+              <h2></h2>
+                  <p style="text-align:justify; font: weight 6px;">
+                   
+                  </p>
+                </div>    
+          </section>
